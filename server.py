@@ -107,5 +107,12 @@ def get_ammotion_by_image():
     image = parse_request(request.data)
     return get_ammotion(image)
 
+@crossdomain(origin='*')
+@app.route("/status",methods=['GET'])
+def get_stats():
+    
+    return "OK!!";
+
+
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=8080)
+    app.run(debug=True)
