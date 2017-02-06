@@ -109,9 +109,8 @@ def get_ammotion_by_image():
 
 @crossdomain(origin='*')
 @app.route("/status",methods=['GET'])
-def get_stats():
-    
-    return "OK!!";
+def get_stats():  
+    return "OK!!"
 
 
 if __name__ == "__main__":
